@@ -1,0 +1,14 @@
+git init - Para iniciar um repositório na pasta onde está
+
+git clone https://github.com/rotognin/RFinanc.git - Para clonar o repositório para o local
+OU
+git remote add origin https://github.com/rotognin/RFinanc.git - Para adicionar o repositório remoto a ser utilizado
+
+git add * - Para adicionar todos os arquivos no índice
+git commit -m "<comentário>" - Adicionar todas as alterações na HEAD
+
+git push origin master - Enviar as alterações para o repositório
+
+git pull - Baixar as alterações do servidor remoto para a pasta local
+
+Site: https://rogerdudler.github.io/git-guide/index.pt_BR.html
