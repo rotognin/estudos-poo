@@ -5,6 +5,9 @@
  * Esse projeto é um teste.
  * Vamos refatorando ele e aplicando as explicações do livro
  * Quero entender a parte de Gerar Coleções a partir de arrays (yield)
+ * 
+ * *** Tarefa a ser realizada aqui: ajustar o controlador para se tornar uma classe
+ * *** Criar o Model com conexão ao banco MySQL
  */
 
 session_start();
