@@ -16,6 +16,10 @@ $texto = (isset($_SESSION['texto'])) ? $_SESSION['texto'] : '';
 $tamanho = strlen($texto);
 $_SESSION['texto'] = '';
 
+$log = (isset($_SESSION['log'])) ? $_SESSION['log'] : '';
+$_SESSION['log'] = '';
+
+
 ?>
 
 <!DOCTYPE html>
@@ -26,19 +30,26 @@ $_SESSION['texto'] = '';
 <body>
     <h1>Escrita e busca de textos.</h1>
     <br>
-    <p>Texto inserido: <?= $texto ?></p>
-    <p>Tamanho do texto: <?= $tamanho ?></p>
-    <br><br>
     <h3>Formulário de escrita:</h3>
-    <form method="post" action="controlador.php?acao=escrever">
+    <form method="post" action="controlador\?acao=escrever">
         Texto a ser exibido: <input type="text" name="texto" autofocus="autofocus">
         <input type="submit" value="Escrever">
     </form>
     <br>
     <h3>Formulário de busca:</h3>
-    <form method="post" action="controlador.php?acao=buscar">
+    <form method="post" action="controlador\?acao=buscar">
         Texto a ser buscado: <input type="text" name="texto">
         <input type="submit" value="Buscar">
     </form>
+	<br>
+    <p>
+		Mensagem retornada <?= $texto ?>
+	</p>
+    <p>
+		Tamanho da mensagem: <?= $tamanho ?>
+	</p>
+	<p>
+		Log do processo: <?= $log ?>
+	</p>
 </body>
 </html>
