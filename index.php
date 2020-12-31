@@ -32,7 +32,7 @@ $_SESSION['log'] = '';
     <br>
     <h3>Formulário de escrita:</h3>
     <form method="post" action="controlador\?acao=escrever">
-        Texto a ser exibido: <input type="text" name="texto" autofocus="autofocus">
+        Texto a ser guardado: <input type="text" name="texto" autofocus="autofocus">
         <input type="submit" value="Escrever">
     </form>
     <br>
