@@ -31,7 +31,7 @@ class Controlador
 				if (!empty($texto)) {
 					$obj->setMensagem($texto);
 				}
-				self::setTexto($obj->getMensagem(), 'B');
+				self::setTexto($obj->gravar(), 'B');
 				break;
 
 			case 'Buscar':

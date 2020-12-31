@@ -51,5 +51,6 @@ $_SESSION['log'] = '';
 	<p>
 		Log do processo: <?= $log ?>
 	</p>
+	
 </body>
 </html>
